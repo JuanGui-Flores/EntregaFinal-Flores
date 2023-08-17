@@ -1,38 +1,65 @@
+/* Reset de estilos básicos para mejorar la consistencia */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Estilos para el encabezado de la aplicación */
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* Estilos para la barra de navegación */
+.NavBar {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
 }
 
+.NavBar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos para el contenedor de lista de elementos */
+.ItemListContainer {
+  padding: 20px;
+}
+
+/* Estilos para los enlaces */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para los enlaces en estado activo */
+.App-link.active {
+  font-weight: bold;
+}
+
+/* Estilos para la clase del botón (si se usa en los componentes) */
+.Button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilos para el contenido principal en cada página */
+.MainContent {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
 }
