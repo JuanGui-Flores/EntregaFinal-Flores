@@ -45,4 +45,10 @@
   .product button:hover {
     background-color: #0056b3;
   }
-  
+
+/* ... otros estilos ... */
+
+.product p.details {
+  margin-top: 10px;
+  color: #666;
+}
