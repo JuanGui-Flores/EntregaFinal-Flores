@@ -1,0 +1,54 @@
+.navbar {
+    padding: 1rem 0;
+    height: 110px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #333;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    color: #555;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+    
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* CartWidget.css */
+  .cart-widget {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .cart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .cart-count {
+    background-color: #f45b5b;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }

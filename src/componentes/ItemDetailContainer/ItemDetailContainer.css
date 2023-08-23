@@ -1,0 +1,43 @@
+.item-detail {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .item-detail img {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .item-detail-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .item-detail h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .item-detail p {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .item-detail button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .item-detail button:hover {
+    background-color: #555;
+  }
+  

@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import cart from './assets/cart.svg';
 
-const CartWidget = () => {
-    const cartCount = 0; // Acá podes usar la cantidad real de elementos en el carrito
+const CartWidget = ({ addToCart }) => {
+    const [cartCount, setCartCount] = useState(0);
+
+    const handleAddToCart = () => {
+        setCartCount(cartCount + 1);
+        addToCart();
+    };
 
     return (
         <div className="cart-widget">
-            <img src={cart} alt="cart-widget" className="cart-icon" />
+            <img src={cart} alt="cart-widget" className="cart-icon" onClick={handleAddToCart} />
             <span className="cart-count">{cartCount}</span>
         </div>
     );
