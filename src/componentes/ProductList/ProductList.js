@@ -10,7 +10,6 @@ const ProductList = ({ products, addToCart }) => {
                     <Link to={`/producto/${product.id}`} className="product-link">
                         <img src={product.image} alt={product.name} />
                         <h3>{product.name}</h3>
-                        <p>Precio: ${product.price}</p>
                         <button onClick={() => addToCart(product)}>Agregar al carrito</button>
                     </Link>
                 </div>
