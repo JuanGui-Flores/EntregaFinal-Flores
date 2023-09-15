@@ -1,9 +1,13 @@
+// NavBar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidgets/CartWidget';
+import { useMyContext } from '../../context/Context'; // Ajusta la ruta de importación según tu estructura
 import './NavBar.css';
 
-const NavBar = ({ cartItems }) => {
+function NavBar() {
+  const { count, increment, decrement, cartItems } = useMyContext(); // Utiliza el contexto
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -31,9 +35,14 @@ const NavBar = ({ cartItems }) => {
           </ul>
         </div>
         <CartWidget cartItems={cartItems} />
+        <div>
+          <p>Contador: {count}</p>
+          <button onClick={increment}>Incrementar</button>
+          <button onClick={decrement}>Decrementar</button>
+        </div>
       </div>
     </nav>
   );
-};
+}
 
 export default NavBar;

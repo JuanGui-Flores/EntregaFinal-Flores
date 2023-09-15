@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react';
+import ItemListContainer from './ItemListContainer';
+import ErrorBoundary from './ErrorBoundary';
 
-const ItemListContainer = ({ product }) => {
+const App = () => {
+    const product = { name: 'Nombre del producto' };
+
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h1 className="mt-5">{product.name}</h1>
-                </div>
-            </div>
+        <div className="App">
+            <ErrorBoundary>
+                <ItemListContainer product={product} />
+            </ErrorBoundary>
         </div>
     );
 };
 
-export default ItemListContainer;
+export default App;
