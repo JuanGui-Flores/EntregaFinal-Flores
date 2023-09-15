@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
@@ -5,7 +6,7 @@ import { MyContextProvider } from './context/Context'; // Importa el proveedor d
 
 function App() {
   return (
-    <MyContextProvider> {/* Envuelve tus componentes con el proveedor de contexto */}
+    <MyContextProvider> 
       <div className="App">
         <NavBar />
         <ItemListContainer greeting={'Holaa!'} />

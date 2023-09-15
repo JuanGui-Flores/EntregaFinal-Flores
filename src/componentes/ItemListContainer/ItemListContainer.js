@@ -1,17 +1,28 @@
 import React from 'react';
-import ItemListContainer from './ItemListContainer';
-import ErrorBoundary from './ErrorBoundary';
 
-const App = () => {
-    const product = { name: 'Nombre del producto' };
+const ItemListContainer = ({ product }) => {
+    // Verifica si 'product' está presente antes de intentar acceder a 'name'
+    if (!product || !product.name) {
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <p>No se proporcionó un producto válido.</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
-        <div className="App">
-            <ErrorBoundary>
-                <ItemListContainer product={product} />
-            </ErrorBoundary>
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <h1 className="mt-5">{product.name}</h1>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default App;
+export default ItemListContainer;
