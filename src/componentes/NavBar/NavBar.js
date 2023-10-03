@@ -1,8 +1,8 @@
 // NavBar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CartWidget from '../CartWidgets/CartWidget';
-import { useMyContext } from '../../context/Context'; // Ajusta la ruta de importación según tu estructura
+import CartWidget from './CartWidget'; // Asegúrate de que la ruta sea correcta
+import { useMyContext } from '../context/Context'; // Ajusta la ruta de importación según tu estructura
 import './NavBar.css';
 
 function NavBar() {
@@ -38,7 +38,7 @@ function NavBar() {
         <div>
           <p>Contador: {count}</p>
           <button onClick={increment}>Incrementar</button>
-          <button onClick={decrement}>Decrementar</button>
+          <button onClick={decrement}>Decrementar</button> 
         </div>
       </div>
     </nav>
